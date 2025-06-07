@@ -162,8 +162,11 @@
     font-size: 15px;
   }
 }
+/* Slight change may not be needed*/
 .nav-items{
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 0 4rem;
   

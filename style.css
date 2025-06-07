@@ -288,5 +288,11 @@
 }
 
 
+/* Test to see if it helps*/
+.navbar-item {
+  text-decoration: none;
+}
 
-
+.navbar-item:hover {
+  text-decoration: none;
+}
