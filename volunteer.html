@@ -48,7 +48,7 @@
         class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
         <div class="flex flex-row items-center md:flex-row md:items-center p-5" id="logo">
             <span class="mission-1 mission-dark"> Saving Lives </span>
-            <a class="logo-border" href="index.html">
+            <a class="logo-border navbar-item remover" href="index.html">
                 <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
             </a>
             <span class="mission-2 mission-dark"> Saving Animals </span>
@@ -64,29 +64,31 @@
                     clip-rule="evenodd"></path>
             </svg>
         </button>
+        <!-- Double underline issue in navbar removed padding and hover:underline-->
         <nav class="">
             <div class="hidden w-full lg:block z-0" id="navbar">
                 <ul
                     class="w-[100vw] h-1/2 lg:text-[18px] top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
                     <li><a href="index.html"
-                            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+                            class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Home</a>
                     </li>
 
                     <li><a
                         href="./index.html#About"
-                        class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About Us</a>
+                        class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">About Us</a>
                     </li>
                     <li><a
                         href="./news.html"
-                        class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
+                        class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Pet News</a>
                     </li>
                     
                     <li><a href="blog.html"
-                            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+                        class="text-custom-heading font-bold  underline-offset-4 navbar-item">Blog</a>
                     </li>
+                    <!-- Donate html text changed to keep consistency-->
                     <li><a href="donate.html"
-                            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
-                            Animals</a></li>
+                            class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Donate
+                            </a></li>
                     <li>
                         <a
                             href="./volunteer.html"
@@ -94,12 +96,12 @@
                             >Support Us</a>
                     </li>
                     <li><a href="reportstary.html"
-                            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+                            class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">SOS
                             Report</a>
                     </li>
 
                     <li>
-                      <a href="./index.html#contact">
+                      <a href="./index.html#contact" class="navbar-item remover">
                         <button
                           class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform"
                         >
@@ -121,7 +123,8 @@
 
                     
                     <li>
-                        <a id="theme-toggle">
+                        <!-- Inconsistent design underline removed using class remover-->
+                        <a id="theme-toggle" class="remover">
                           <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
                         </a>
                     </li>

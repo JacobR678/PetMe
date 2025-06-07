@@ -43,7 +43,8 @@
 		id="header">
 		<div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
 			<span class="mission-1 mission-dark"> Saving Lives </span>
-			<a class="logo-border" href="index.html">
+			<!-- Removed Navbar Underline for the image logo PetMe-->
+			<a class="logo-border navbar-item remover" href="index.html">
 				<img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
 			</a>
 			<span class="mission-2 mission-dark"> Saving Animals </span>
@@ -66,29 +67,29 @@
 
 					<li>
 						<a href="./index.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+							class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Home</a>
 					</li>
 					<li>
 						<a href="index.html#meet"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet
+							class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Meet
 							Pets</a>
 					</li>
 					<li>
 						<a href="index.html#About"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
+							class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">About
 							Us</a>
 					</li>
 					<li>
 						<a href="./news.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
+							class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Pet News</a>
 					</li>
 					<li>
 						<a href="./blog.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+							class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">Blogs</a>
 					</li>
 					<li>
 						<a href="./donate.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+							class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">Donate</a>
 					</li>
 					<li>
 						<a
@@ -99,23 +100,25 @@
 					</li>
 					<li>
 						<a href="./reportstary.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+							class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">SOS
 							Report</a>
 					</li>
 					<li>
-						<a href="./index.html#contact">
+					<!-- Removed hover underline for both the contact us button and theme toggle-->
+						<a href="./index.html#contact" 
+						class="lg:p-1 text-custom heading font-bold underline-offset-4 turn-red-hover navbar-item remover">
 							<button
-								class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
+								class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0  transition-transform">
 								Contact Us
 								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-									stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+									stroke-width="2" class="w-4 h-4 ml-1 transform translate-x-0 transition-transform" viewBox="0 0 24 24">
 									<path d="M5 12h14M12 5l7 7-7 7"></path>
 								</svg>
 							</button>
 						</a>
 					</li>
 					<li>
-						<a id="theme-toggle">
+						<a id="theme-toggle" class="remover">
 							<i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
 						</a>
 					</li>

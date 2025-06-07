@@ -31,7 +31,7 @@
     id="header">
     <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
-      <a class="logo-border" href="index.html">
+      <a class="logo-border navbar-item remover" href="index.html">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-2 mission-dark"> Saving Animals </span>
@@ -47,6 +47,7 @@
           clip-rule="evenodd"></path>
       </svg>
     </button>
+    <!-- Navigation bar | Issue within the blog.html where the href are being double underlined -->
     <nav class="">
       <div class="hidden w-full xl:block z-2" id="navbar">
         <ul
@@ -56,8 +57,10 @@
               class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
           </li>
           <li>
+            <!-- Change the meet pets class to custom heading similar to index-->
             <a href="./index.html#meet"
-              class="xl:p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet
+              
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet
               Pets</a>
           </li>
           <li>
@@ -88,7 +91,7 @@
               Report</a>
           </li>
           <li>
-            <a href="./index.html#contact">
+            <a href="./index.html#contact" class=" lg:p-1 text-custom heading font-bold underline-offset-4 turn-red hover navbar-item remover">
               <button
                 class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:translate-x-2 transition-transform">
                 Contact Us
@@ -100,7 +103,7 @@
             </a>
           </li>
           <li>
-            <a id="theme-toggle">
+            <a id="theme-toggle" class="remover">
               <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
             </a>
           </li>

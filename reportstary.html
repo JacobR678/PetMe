@@ -29,7 +29,7 @@
     class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
     <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
-      <a class="logo-border" href="index.html">
+      <a class="logo-border navbar-item remover" href="index.html">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-2 mission-dark"> Saving Animals </span>
@@ -52,35 +52,46 @@
       </svg>
     </button>
     <nav class="">
+      <!-- Changed ul item-start to item-center caused issue in mobile view when the nav-items weren't centered -->
       <div class="hidden w-full lg:block z-2" id="navbar">
         <ul
-          class="w-[100vw] lg:text-[18px] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-sm space-y-8 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center"
+          class="w-[100vw] lg:text-[18px] h-1/2 top-0 right-0 p-4 lg:p-4 mt-12 lg:mt-0 text-center text-sm space-y-8 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg item-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
         >
           <li>
             <a
               href="./index.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+              class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
               >Home</a
             >
           </li>
           <li>
             <a
+              href="./index.html#meet" class="lg:p-1 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item"
+            >Meet Pets</a>
+          </li>
+          <li>
+            <a
+              href="./index.html#About" class="lg:p-1 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item"
+            >About Us</a>
+          </li>
+          <li>
+            <a
               href="./news.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+              class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
               >Pet News</a
             >
           </li>
           <li>
             <a
               href="./blog.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+              class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item"
               >Blogs</a
             >
           </li>
           <li>
             <a
               href="./donate.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+              class="text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item"
               >Donate</a
             >
           </li>
@@ -94,12 +105,25 @@
           <li>
             <a
               href="./reportstary.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+              class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
               >SOS Report</a
             >
           </li>
           <li>
-            <a id="theme-toggle">            
+              <a href="./index.html#contact" 
+              class="text-custom heading font-bold underline-offset-4 turn-red-hover navbar-item remover">
+                <button
+                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0  transition-transform">
+                  Contact Us
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-4 h-4 ml-1 transform translate-x-0 transition-transform" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          <li>
+            <a id="theme-toggle" class="remover">            
               <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
             </a>
           </li>
